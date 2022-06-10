@@ -1,13 +1,88 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+   
+  }
+  
+  
+  .con{
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .box{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    color:#2196f3;  
+    border-radius: 15px;
+    background-color: whitesmoke;
+  }
+  
+  .blog{
+    position:relative;
+    max-width: 500px;
+    min-width:325px;
+  }
+  .card{
+    position:relative;
+  }
+  
+  .edit{
+    position:absolute;
+    right: 0px;
+  }
+  .del{
+    position:absolute;
+    right: 0px;
+  }
+  
+  .register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.theconversation.com/files/407039/original/file-20210617-15-2h4ak3.jpg?ixlib=rb-1.1.0&rect=0%2C10%2C3500%2C2321&q=45&auto=format&w=926&fit=clip");
+  background-size: cover;
+  }
+  
+  .login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("https://media.audext.com/wp-content/uploads/2020/09/expert-tips-for-writing-job-posts.jpg");
+    background-size: cover;
+  }
+  
+  .writeImg {
+    margin-left: 30px;
+    width: 70vw;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .writeInput{
+    margin-left: 30px;
+    width: 70vw;
+    border:none;
+  }
+  
+  .writeInput:focus{
+    outline:none;
+  }
