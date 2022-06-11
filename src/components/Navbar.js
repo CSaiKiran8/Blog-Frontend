@@ -23,13 +23,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-sm navbar-dark bg-dark" >
+    <nav className="navbar navbar-expand-sm navbar-dark bg-secondary" > 
       <div className="container-fluid">
-        <Link to='' className="navbar-brand" style={{ color: "#2196f3" }}>
-          Blog
+        <Link to='' className="navbar-brand" style={{ color: "#ff00ff" }}>
+          Blog App
         </Link>
-        <Link to='#' className="navbar-brand" style={{ color: "#2196f3" }}>
-          {`👋Welcome ${name}`}
+        <Link to='#' className="navbar-brand" style={{ color: "#00ffff" }}>
+          {`Hi👋, Welcome ${name}😊`}
         </Link>
         <button
           className="navbar-toggler"  
@@ -46,18 +46,18 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto" >
             <li className="nav-item" >
-              <Link className="nav-link active" style={{ color: "#2196f3" }} aria-current="page" to="/">
+              <Link className="nav-link active" style={{ color: "#00ffff" }} aria-current="page" to="/">
                 MyBlogs
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" style={{ color: "#2196f3" }}aria-current="page" to="/allblog">
+              <Link className="nav-link active" style={{ color: "#00ffff" }}aria-current="page" to="/allblog">
                 AllBlogs
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" style={{ color: "#2196f3" }}aria-current="page" to="/create">
-                Write
+              <Link className="nav-link active" style={{ color: "#00ffff" }}aria-current="page" to="/create">
+                AddBlog
               </Link>
             </li>
           </ul>
@@ -66,7 +66,7 @@ const Navbar = () => {
                   className="btn"
                   title="Logout"
                   onClick={handleLogout}
-                  style={{ backgroundColor: "#2196f3" }}
+                  style={{ backgroundColor: "black", color: "white" }}
                 >
                   Logout
                 </button>

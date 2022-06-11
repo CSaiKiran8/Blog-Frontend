@@ -31,7 +31,7 @@ const Forgot = () => {
 
   return (
     <div className="con">
-      <div className="box bg-dark text-white">
+      <div className="box bg-white text-dark">
       <form onSubmit={handleClick}>
         <div className="form-group m-5">
           <input
@@ -47,10 +47,12 @@ const Forgot = () => {
           />
         </div>
         <div className="d-flex justify-content-center align-items-center flex-column">
-          <button className="btn btn-primary" type="submit">
+          <button className="btn btn-success" type="submit">
             Send Otp
           </button><br/>
-          <Link to="/login">Login</Link>
+          <button className="btn btn-light m-2"  type="submit">
+              <Link to="/login" style={{color: "black"}}>Login</Link>
+            </button>
         </div>
       </form>
       </div>

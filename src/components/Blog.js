@@ -3,9 +3,9 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setBlogs } from "../redux/blogsSlice";
 import { setName } from "../redux/nameSlice";
-import EditIcon from "@mui/icons-material/Edit";
 import { toast } from "react-toastify";
-import DeleteIcon from "@mui/icons-material/Delete";
+import ModeEditTwoToneIcon from '@mui/icons-material/ModeEditTwoTone';
+import DeleteTwoToneIcon from '@mui/icons-material/DeleteTwoTone';
 import axios from '../api/axios';
 import ago from "ts-ago";
 
@@ -44,18 +44,20 @@ const Blog = () => {
         {blogs.map((blog, i) => (
           <div className="card mb-1" key={i}>
            {blog.image &&  <img src={blog.image} className="card-img-top" alt="..." />}
-            <Link to={`/${blog._id}`}>
-              <EditIcon className='edit' color="primary" />
-            </Link> 
-            <div className="card-body">
+
+            <div className="card-body" style={{backgroundColor: '#ffffb9'}}>
               <h5 className="card-title">{blog.title}</h5>
+              <Link to={`/${blog._id}`} style={{color: 'black'}}>
+                <ModeEditTwoToneIcon className='edit' color='dark' />
+              </Link> 
               <p className="card-text">{blog.desc}</p>
+              <DeleteTwoToneIcon className="del" color='black' onClick={() => delHandler(blog._id)} />
               <span>Posted by {blog.name}</span>
               <p className="card-text">
                 <small className="text-muted">{ago(blog.createdAt)}</small>
               </p>
             </div>
-            <DeleteIcon className="del" color='error' onClick={() => delHandler(blog._id)} />
+            
           </div>
         ))}
       </div>

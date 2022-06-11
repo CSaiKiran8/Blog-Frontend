@@ -39,17 +39,6 @@ const CreateBlog = () => {
           <div className="from-group">
             <input
               type="text"
-              className="form-control m-3 p-3"
-              placeholder="Image URL"
-              name="image"
-              autoFocus={true}
-              value={blog.image}
-              onChange={handleValue}
-            />
-          </div>
-          <div className="from-group">
-            <input
-              type="text"
               className="form-control m-3 p-3 writeInput"
               placeholder="Title"
               name="title"
@@ -60,7 +49,7 @@ const CreateBlog = () => {
           </div>
           <div className="from-group">
             <textarea
-              placeholder="Tell your story..."
+              placeholder="Description" 
               className="form-control m-3 p-3 writeInput"
               type="text"
               name="desc"
@@ -68,9 +57,20 @@ const CreateBlog = () => {
               onChange={handleValue}
             ></textarea>
           </div>
+          <div className="from-group">
+            <input
+              type="text"
+              className="form-control m-3 p-3"
+              placeholder="Image URL"
+              name="image"
+              autoFocus={true}
+              value={blog.image}
+              onChange={handleValue}
+            />
+          </div>
           <div className="d-flex justify-content-center align-items-center flex-column">
-            <button className="btn btn-primary m-2" type="submit">
-              Publish
+            <button className="btn btn-danger m-2" type="submit">
+              Post Your Blog
             </button>
           </div>
         </form>

@@ -33,10 +33,31 @@ const EditBlog = () => {
     <Navbar/>
     <div className="con">
     <form className='d-flex justify-content-center flex-column' onSubmit={handleSubmit}>
+        <div className='from-group'>
+          <input
+            type="text"
+            className="form-control m-3 p-3"
+            placeholder="Title"
+            name='title'
+            autoFocus={true}
+            value={blog.title}
+            onChange={handleValue}
+           />
+        </div>
+        <div className='from-group'>
+          <textarea
+            placeholder="Description"
+            className="form-control m-3 p-3"
+            type="text"
+            name='desc'
+            value={blog.desc}
+            onChange={handleValue}
+          ></textarea>
+        </div>
         <div className="from-group">
             <input
               type="text"
-              className="form-control m-3 p-3"
+              className="form-control m-3 p-3" 
               placeholder="Image URL"
               name="image"
               autoFocus={true}
@@ -44,30 +65,9 @@ const EditBlog = () => {
               onChange={handleValue}
             />
           </div>
-        <div className='from-group'>
-        <input
-          type="text"
-          className="form-control m-3 p-3"
-          placeholder="Title"
-          name='title'
-          autoFocus={true}
-          value={blog.title}
-          onChange={handleValue}
-        />
-      </div>
-      <div className='from-group'>
-        <textarea
-          placeholder="Tell your story..."
-          className="form-control m-3 p-3"
-          type="text"
-          name='desc'
-          value={blog.desc}
-          onChange={handleValue}
-        ></textarea>
-      </div>
       <div className="d-flex justify-content-center align-items-center flex-column">
-            <button className="btn btn-primary m-2" type="submit">
-              Edit
+            <button className="btn btn-success m-2" type="submit">
+              Submit
             </button>
           </div>
     </form>

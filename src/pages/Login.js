@@ -47,7 +47,7 @@ const Login = () => {
 
   return (
     <div className="login">
-      <div className="box m-3 p-5 bg-dark text-white">
+      <div className="box m-3 p-5" style={{color: "green"}}>
         <h1 className="d-flex justify-content-center align-items-center flex-column">
           LOGIN IN
         </h1>
@@ -76,11 +76,15 @@ const Login = () => {
             />
           </div>
           <div className="d-flex justify-content-center align-items-center flex-column m-3">
-          <button className="btn btn-primary m-2"  type="submit">
+            <button className="btn btn-success m-2" type="submit">
               Sign In
             </button>
-              <Link to="/forgot">Forget Password?</Link>
-              <Link to="/register">REGISTER</Link>
+            <button className="btn btn-light m-2"  type="submit">
+              <Link to="/forgot" style={{color: "black"}}>Forget Password?</Link>
+            </button>
+            <button className="btn btn-light m-2"  type="submit">
+              <Link to="/register" style={{color: "black"}}>REGISTER</Link>
+            </button>
           </div>
         </form>
       </div>

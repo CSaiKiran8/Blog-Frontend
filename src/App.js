@@ -21,8 +21,8 @@ const App = () => {
   return (
     <Router>
       <ToastContainer
-        position="top-center"
-        theme={"dark"}
+        position="top-right"
+        theme={"light"}
         autoClose={3000}
         hideProgressBar={false}
         newestOnTop={false}

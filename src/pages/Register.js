@@ -29,7 +29,7 @@ const Register = () => {
 
   return (
     <div className="register">
-      <div className="box m-3 p-5 bg-dark text-white">
+      <div className="box m-3 p-5" style={{color: "green"}}>
         <h1 className="d-flex justify-content-center">REGISTER</h1>
         <form onSubmit={handleRegister}>
           <div className="d-flex justify-content-center align-items-center flex-column">
@@ -69,10 +69,12 @@ const Register = () => {
             </div>
           </div>
           <div className="d-flex justify-content-center align-items-center flex-column">
-            <button className="btn btn-primary m-2" type="submit">
+            <button className="btn btn-success m-2" type="submit">
               Register
             </button>
-            <Link to="/login">Login</Link>
+            <button className="btn btn-light m-2"  type="submit">
+              <Link to="/login" style={{color: "black"}}>Login</Link>
+            </button>
           </div>
         </form>
       </div>
