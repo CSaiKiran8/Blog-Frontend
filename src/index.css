@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    background: linear-gradient(to right, rgba(106, 226, 98, 0.5), rgb(139, 167, 214))
+   
+  }
+  
+  
+  .con{
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .box{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    color:#b6ccdf36;  
+    border-radius: 15px;
+    background-color: whitesmoke;
+  }
+  
+  .blog{
+    position:relative;
+    max-width: 500px;
+    min-width:325px;
+  }
+  .card{
+    position:relative;
+  }
+  
+  .edit{
+    position:absolute;
+    right: 0px;
+  }
+  .del{
+    position:absolute;
+    right: 0px;
+  }
+  
+  .register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://img.freepik.com/free-photo/flat-lay-travel-composition-with-world-map-wooden-background_169016-16173.jpg?w=2000");
+  background-size: cover;
+  }
+  
+  .login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFdaBnKFbxvLmnlzBvCwq2wapkI3Aru0IEtg&usqp=CAU");
+    background-size: cover;
+  }
+  
+  .writeImg {
+    margin-left: 30px;
+    width: 70vw;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .writeInput{
+    margin-left: 30px;
+    width: 70vw;
+    border:none;
+  }
+  
+  .writeInput:focus{
+    outline:none;
+  }
